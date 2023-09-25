@@ -10,8 +10,7 @@ The webapp created in Project 01 is deployed in aws using lift and shift method.
 VMs are replaced by EC2 Instances.
 Nginx is replaced by ELB (Elastic Load Balancer).
 Autoscaling is included to handle workload as required.
-S3/EFS is used to storaged.
-Route 53 for the DNS service.
+S3/EFS is used for storage.
+Route 53 for the DNS service (For Backend services).
 Git Bash is used for CLI.
 Visual Studio Code as an IDE.
-
