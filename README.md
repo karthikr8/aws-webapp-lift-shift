@@ -14,3 +14,5 @@ S3/EFS is used for storage.
 Route 53 for the DNS service (For Backend services).
 Git Bash is used for CLI.
 Visual Studio Code as an IDE.
+
+The instances are launched manually. The artifact is built in local machine and uploaded to S3.
