@@ -1,0 +1,13 @@
+SSH into the webapp instance
+$ ssh -i (access key) ubuntu@(public ip)
+
+In the webapp Instance
+$ sudo -i
+$ apt install awscli -y
+$ aws s3 cp s3://(bucket name)/(artifact).war /tmp/
+
+Load the artifact in tomcat
+$ systemctl stop tomcat9
+$ rm -rf /var/lib/tomcat9/webapps/ROOT
+$ cp /tmp/(artifact).war /var/lib/tomcat9/webapps/ROOT.war
+$ systemctl start tomcat9

@@ -1,0 +1,10 @@
+Make sure awscli is configured with S3 access
+
+Create a S3 Bucket to store atrifact. Make sure it's unique
+$ aws s3 mb s3://krdevops-webapp
+
+Copy artifact to S3 Bucket
+
+$ aws s3 cp (artifact_path).war s3://krdevops-webapp/
+
+Add S3 IAM role to the webapp Instance so the artifact can be downloaded to it.
